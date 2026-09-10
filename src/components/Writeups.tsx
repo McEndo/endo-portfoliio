@@ -39,7 +39,7 @@ const Writeups = () => {
           {/* Link */}
 
           <a
-            href="#"
+            href="https://endo-field-notes.netlify.app/"
             className="group self-start border border-white/30 px-6 py-3.5 text-[9px] tracking-[0.2em] text-white/70 transition hover:border-white hover:bg-white hover:text-black sm:px-7 sm:py-4 sm:text-[10px] md:self-auto"
           >
             EXPLORE FIELD NOTES
