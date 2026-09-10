@@ -56,9 +56,10 @@ const Navbar = () => {
           <a
             href="#"
             onClick={closeMenu}
-            className="relative z-50 text-xl font-semibold tracking-[-0.03em]"
+            className="relative z-50 inline-flex items-center gap-2 text-xl font-semibold tracking-[-0.03em]"
           >
-            ENDO<span className="text-sky-400">.</span>
+            <img src="/endo-logo2.png" alt="" aria-hidden="true" width={28} height={28} className="h-7 w-7 shrink-0 object-contain" />
+            <span>ENDO<span className="text-sky-400">.</span></span>
           </a>
 
           {/* Desktop Navigation */}
