@@ -16,4 +16,13 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    // Production uses the matching rewrite in public/_redirects.
+    proxy: {
+      '/field-notes.json': {
+        target: 'http://127.0.0.1:5174',
+        rewrite: () => '/latest.json',
+      },
+    },
+  },
 })

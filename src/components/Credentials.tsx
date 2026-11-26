@@ -17,7 +17,7 @@ const Credentials = () => {
           </span>
 
           <div>
-            <p className="text-[10px] tracking-[0.3em] text-white/40 sm:text-xs">
+            <p className="text-[10px] tracking-[0.3em] text-white/50 sm:text-xs">
               EXPERIENCE & LEARNING
             </p>
 
@@ -44,11 +44,11 @@ const Credentials = () => {
             </div>
 
             <div>
-              <p className="text-sm leading-7 text-white/40">
+              <p className="text-sm leading-7 text-white/50">
                 No professional certifications yet.
               </p>
 
-              <p className="mt-2 font-mono text-[9px] tracking-[0.1em] text-white/20 sm:text-[10px]">
+              <p className="mt-2 font-mono text-[9px] tracking-[0.1em] text-white/50 sm:text-[10px]">
                 BUILDING THE FOUNDATION FIRST.
               </p>
             </div>
@@ -80,13 +80,13 @@ const Credentials = () => {
                     Jr Penetration Tester
                   </p>
 
-                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/30">
+                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/50">
                     Enumeration, exploitation, penetration testing
                     methodology, and industry-standard tooling.
                   </p>
                 </div>
 
-                <span className="font-mono text-[9px] text-white/25 sm:shrink-0 sm:text-[10px]">
+                <span className="font-mono text-[9px] text-white/50 sm:shrink-0 sm:text-[10px]">
                   2025
                 </span>
 
@@ -101,13 +101,13 @@ const Credentials = () => {
                     Web Application Pentesting
                   </p>
 
-                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/30">
+                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/50">
                     OWASP Top 10, SQL injection, XSS, authentication
                     bypass, and web application security.
                   </p>
                 </div>
 
-                <span className="font-mono text-[9px] text-white/25 sm:shrink-0 sm:text-[10px]">
+                <span className="font-mono text-[9px] text-white/50 sm:shrink-0 sm:text-[10px]">
                   2025
                 </span>
 
@@ -122,13 +122,13 @@ const Credentials = () => {
                     Cyber Security 101
                   </p>
 
-                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/30">
+                  <p className="mt-2 max-w-xl text-xs leading-6 text-white/50">
                     Linux, Windows, networking, cryptography,
                     and vulnerability assessment fundamentals.
                   </p>
                 </div>
 
-                <span className="font-mono text-[9px] text-white/25 sm:shrink-0 sm:text-[10px]">
+                <span className="font-mono text-[9px] text-white/50 sm:shrink-0 sm:text-[10px]">
                   2024
                 </span>
 

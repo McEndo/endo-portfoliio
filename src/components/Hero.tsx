@@ -92,7 +92,7 @@ const Hero = () => {
 
             <a
               href="#about"
-              className="border-b border-sky-400 pb-2 text-[9px] tracking-[0.2em] text-white/70 transition hover:text-white sm:text-[10px]"
+              className="relative border-b border-sky-400 pb-2 after:absolute after:-inset-x-2 after:-inset-y-3 text-[9px] tracking-[0.2em] text-white/70 transition hover:text-white sm:text-[10px]"
             >
               ABOUT ME
             </a>
@@ -106,7 +106,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
 
       <div className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex">
-        <span className="text-[9px] tracking-[0.3em] text-white/30">
+        <span className="text-[9px] tracking-[0.3em] text-white/50">
           SCROLL
         </span>
 
