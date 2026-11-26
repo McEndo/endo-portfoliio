@@ -48,7 +48,7 @@ const Projects = () => {
             </span>
 
             <div>
-              <p className="text-[10px] tracking-[0.3em] text-white/40 sm:text-xs">
+              <p className="text-[10px] tracking-[0.3em] text-white/50 sm:text-xs">
                 SELECTED WORK
               </p>
 
@@ -86,13 +86,13 @@ const Projects = () => {
 
                 {/* Description */}
 
-                <p className="max-w-xl text-xs leading-6 text-white/40 sm:text-sm">
+                <p className="max-w-xl text-xs leading-6 text-white/50 sm:text-sm">
                   {project.description}
                 </p>
 
                 {/* Type */}
 
-                <span className="font-mono text-[9px] tracking-[0.15em] text-white/25 md:text-right">
+                <span className="font-mono text-[9px] tracking-[0.15em] text-white/50 md:text-right">
                   {project.type}
                 </span>
 
@@ -115,7 +115,7 @@ const Projects = () => {
                           {tool.name}
                         </h4>
 
-                        <span className="font-mono text-[9px] tracking-[0.12em] text-white/30">
+                        <span className="font-mono text-[9px] tracking-[0.12em] text-white/50">
                           {tool.version}
                         </span>
                       </div>
@@ -126,7 +126,7 @@ const Projects = () => {
                         {tool.description}
                       </p>
 
-                      <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[9px] tracking-[0.08em] text-white/30 sm:text-[10px]">
+                      <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[9px] tracking-[0.08em] text-white/50 sm:text-[10px]">
                         {tool.metadata.map((item) => (
                           <li key={item}>{item}</li>
                         ))}
@@ -138,7 +138,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`View ${tool.name} on GitHub`}
-                      className="group/link inline-flex w-fit items-center border-b border-white/20 pb-2 font-mono text-[9px] tracking-[0.15em] text-white/50 transition-colors duration-300 hover:border-sky-400 hover:text-white md:justify-self-end"
+                      className="group/link relative after:absolute after:-inset-x-2 after:-inset-y-3 inline-flex w-fit items-center border-b border-white/20 pb-2 font-mono text-[9px] tracking-[0.15em] text-white/50 transition-colors duration-300 hover:border-sky-400 hover:text-white md:justify-self-end"
                     >
                       GITHUB
                       <span className="ml-3 transition-transform duration-300 group-hover/link:translate-x-1">

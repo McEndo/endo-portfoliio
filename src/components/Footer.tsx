@@ -19,7 +19,7 @@ const Footer = () => {
 
             <a
               href="mailto:ehondormichael14@gmail.com"
-              className="mt-8 inline-block border-b border-white/30 pb-2 text-sm text-white/60 transition-colors duration-300 hover:border-white hover:text-white"
+              className="relative mt-8 inline-block border-b border-white/30 pb-2 text-sm text-white/60 after:absolute after:inset-x-0 after:-inset-y-2 transition-colors duration-300 hover:border-white hover:text-white"
             >
               ehondormichael14@gmail.com
             </a>
@@ -31,7 +31,7 @@ const Footer = () => {
               href="https://github.com/McEndo"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] tracking-[0.2em] text-white/40 transition hover:text-white"
+              className="relative after:absolute after:-inset-x-2 after:-inset-y-2 min-[360px]:after:-inset-y-4 text-[10px] tracking-[0.2em] text-white/50 transition hover:text-white"
             >
               GITHUB
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/michael-ehondor"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] tracking-[0.2em] text-white/40 transition hover:text-white"
+              className="relative after:absolute after:-inset-x-2 after:-inset-y-2 min-[360px]:after:-inset-y-4 text-[10px] tracking-[0.2em] text-white/50 transition hover:text-white"
             >
               LINKEDIN
             </a>
@@ -49,7 +49,7 @@ const Footer = () => {
               href="https://tryhackme.com/p/McEnd0"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] tracking-[0.2em] text-white/40 transition hover:text-white"
+              className="relative after:absolute after:-inset-x-2 after:-inset-y-2 min-[360px]:after:-inset-y-4 text-[10px] tracking-[0.2em] text-white/50 transition hover:text-white"
             >
               TRYHACKME
             </a>
@@ -64,7 +64,7 @@ const Footer = () => {
             ENDO<span className="text-sky-400">.</span>
           </span>
 
-          <p className="font-mono text-[10px] tracking-[0.1em] text-white/20">
+          <p className="font-mono text-[10px] tracking-[0.1em] text-white/50">
             © 2026 ENDO. ALL RIGHTS RESERVED.
           </p>
 

@@ -40,7 +40,7 @@ const About = () => {
           </span>
 
           <div>
-            <p className="text-[10px] tracking-[0.3em] text-white/40 sm:text-xs">
+            <p className="text-[10px] tracking-[0.3em] text-white/50 sm:text-xs">
               WHO I AM
             </p>
 
@@ -63,7 +63,7 @@ const About = () => {
               and offensive security.
             </p>
 
-            <p className="mt-6 max-w-xl text-sm leading-7 text-white/40 sm:text-base">
+            <p className="mt-6 max-w-xl text-sm leading-7 text-white/50 sm:text-base">
               I learn primarily through hands-on practice, documenting
               what I discover through labs, challenges, projects,
               and security research.
@@ -88,7 +88,7 @@ const About = () => {
                     {area.title}
                   </h3>
 
-                  <p className="mt-2 max-w-md text-xs leading-6 text-white/40 sm:text-sm">
+                  <p className="mt-2 max-w-md text-xs leading-6 text-white/50 sm:text-sm">
                     {area.description}
                   </p>
                 </div>

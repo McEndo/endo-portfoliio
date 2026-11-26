@@ -1,8 +1,24 @@
+import { useEffect, useState } from 'react'
 import Reveal from './Reveal'
 import { motion } from 'motion/react'
+import { fieldNoteUrl, parseFieldNotes, type FieldNote } from '../lib/fieldNotes'
 
 
 const Writeups = () => {
+  const [notes, setNotes] = useState<FieldNote[]>([])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    // If the feed is unavailable, the section falls back to its Explore link.
+    fetch('/field-notes.json', { signal: controller.signal })
+      .then((response) => (response.ok ? response.json() : []))
+      .then((data: unknown) => setNotes(parseFieldNotes(data)))
+      .catch(() => {})
+
+    return () => controller.abort()
+  }, [])
+
   return (
     <Reveal>
     <section
@@ -21,7 +37,7 @@ const Writeups = () => {
             </span>
 
             <div>
-              <p className="text-[10px] tracking-[0.3em] text-white/40 sm:text-xs">
+              <p className="text-[10px] tracking-[0.3em] text-white/50 sm:text-xs">
                 TECHNICAL DOCUMENTATION
               </p>
 
@@ -29,7 +45,7 @@ const Writeups = () => {
                 FIELD NOTES
               </h2>
 
-              <p className="mt-7 max-w-xl text-sm leading-7 text-white/40 sm:mt-8 sm:text-base">
+              <p className="mt-7 max-w-xl text-sm leading-7 text-white/50 sm:mt-8 sm:text-base">
                 Technical writeups, lab notes, and security research
                 documented from hands-on work.
               </p>
@@ -51,6 +67,41 @@ const Writeups = () => {
           </a>
 
         </div>
+
+        {/* Latest Notes */}
+
+        {notes.length > 0 && (
+          <ol className="mt-14 border-t border-white/10 sm:mt-16">
+            {notes.map((note, index) => (
+              <li key={note.slug} className="border-b border-white/10">
+                <a
+                  href={fieldNoteUrl(note.slug)}
+                  className="group grid grid-cols-[2.5rem_1fr_auto] items-start gap-x-2 gap-y-2 py-6 sm:py-7 md:grid-cols-[80px_1fr_110px_110px_32px] md:items-center md:gap-x-4"
+                >
+                  <span aria-hidden="true" className="pt-1 font-mono text-xs text-white/25 md:pt-0 sm:text-sm">
+                    0{index + 1}
+                  </span>
+
+                  <span className="text-sm font-medium leading-6 tracking-[0.08em] text-white sm:text-base">
+                    {note.title}
+                  </span>
+
+                  <span className="col-start-2 row-start-2 flex gap-4 font-mono text-[9px] tracking-[0.15em] text-white/50 md:contents">
+                    <span>{note.type.toUpperCase()}</span>
+                    <time dateTime={note.date}>{note.date}</time>
+                  </span>
+
+                  <span
+                    aria-hidden="true"
+                    className="col-start-3 row-start-1 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-white md:col-start-auto md:row-start-auto md:text-right"
+                  >
+                    →
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        )}
 
       </div>
     </section>
